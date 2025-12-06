@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  foldmarks:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: foldmarks-generator:latest
+    container_name: foldmarks-generator
+    volumes:
+      - .:/workspace
+    command: ["--help"]
+    stdin_open: true
+    tty: true
