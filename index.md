@@ -786,7 +786,9 @@ project/
 - Fix 一个顶点$v \in V$
 - 列出链接它的所有边$E_{v} = \left\{ e \in E | v \in \partial e \right\}$
 - 遍历所有顶点
+
 来描述。
+
 其中第二步等同于
 - 列出所有依赖于$v$的顶点集合$D_{v} = \left\{ u \in V | (u, v) \in E \right\}$
 
